@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <button onclick="addToDisplay('7')" class="calculator-button">7</button>
+        <button onclick="addToDisplay('8')" class="calculator-button">8</button>
+        <button onclick="addToDisplay('9')" class="calculator-button">9</button>
+        <button onclick="addToDisplay('/')" class="calculator-button">/</button>
+        <button onclick="addToDisplay('4')" class="calculator-button">4</button>
+        <button onclick="addToDisplay('5')" class="calculator-button">5</button>
+        <button onclick="addToDisplay('6')" class="calculator-button">6</button>
+        <button onclick="addToDisplay('*')" class="calculator-button">*</button>
+        <button onclick="addToDisplay('1')" class="calculator-button">1</button>
+        <button onclick="addToDisplay('2')" class="calculator-button">2</button>
+        <button onclick="addToDisplay('3')" class="calculator-button">3</button>
+        <button onclick="addToDisplay('-')" class="calculator-button">-</button>
+        <button onclick="addToDisplay('0')" class="calculator-button">0</button>
+        <button onclick="addToDisplay('.')" class="calculator-button">.</button>
+        <button onclick="calculateResult()" class="calculator-button">=</button>
+        <button onclick="addToDisplay('+')" class="calculator-button">+</button>
+        <button onclick="clearDisplay()" class="calculator-button">C</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
