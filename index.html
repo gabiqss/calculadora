@@ -2,33 +2,42 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="icon" type="image/x-icon" href="calculator-solid.ico">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Digital-7+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
 
     <div class="calculator">
-        <input type="text" id="display" readonly>
-        <button onclick="addToDisplay('7')" class="calculator-button">7</button>
-        <button onclick="addToDisplay('8')" class="calculator-button">8</button>
-        <button onclick="addToDisplay('9')" class="calculator-button">9</button>
-        <button onclick="addToDisplay('/')" class="calculator-button">/</button>
-        <button onclick="addToDisplay('4')" class="calculator-button">4</button>
-        <button onclick="addToDisplay('5')" class="calculator-button">5</button>
-        <button onclick="addToDisplay('6')" class="calculator-button">6</button>
-        <button onclick="addToDisplay('*')" class="calculator-button">*</button>
-        <button onclick="addToDisplay('1')" class="calculator-button">1</button>
-        <button onclick="addToDisplay('2')" class="calculator-button">2</button>
-        <button onclick="addToDisplay('3')" class="calculator-button">3</button>
-        <button onclick="addToDisplay('-')" class="calculator-button">-</button>
-        <button onclick="addToDisplay('0')" class="calculator-button">0</button>
+        <input class="display" type="text" id="display" readonly>
+        <button onclick="addToDisplay('7')" class="calculator-button"><i class="fa-solid fa-7"></i></button>
+        <button onclick="addToDisplay('8')" class="calculator-button"><i class="fa-solid fa-8"></i></button>
+        <button onclick="addToDisplay('9')" class="calculator-button"><i class="fa-solid fa-9"></i></button>
+        <button onclick="addToDisplay('/')" class="calculator-button"><i class="fa-solid fa-divide"></i></button>
+        <button onclick="addToDisplay('4')" class="calculator-button"><i class="fa-solid fa-4"></i></button>
+        <button onclick="addToDisplay('5')" class="calculator-button"><i class="fa-solid fa-5"></i></button>
+        <button onclick="addToDisplay('6')" class="calculator-button"><i class="fa-solid fa-6"></i></button>
+        <button onclick="addToDisplay('*')" class="calculator-button"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="addToDisplay('1')" class="calculator-button"><i class="fa-solid fa-1"></i></button>
+        <button onclick="addToDisplay('2')" class="calculator-button"><i class="fa-solid fa-2"></i></button>
+        <button onclick="addToDisplay('3')" class="calculator-button"><i class="fa-solid fa-3"></i></button>
+        <button onclick="addToDisplay('-')" class="calculator-button"><i class="fa-solid fa-minus"></i></button>
+        <button onclick="addToDisplay('0')" class="calculator-button"><i class="fa-solid fa-0"></i></button>
         <button onclick="addToDisplay('.')" class="calculator-button">.</button>
-        <button onclick="calculateResult()" class="calculator-button">=</button>
-        <button onclick="addToDisplay('+')" class="calculator-button">+</button>
-        <button onclick="clearDisplay()" class="calculator-button">C</button>
+        <button onclick="calculateResult()" class="calculator-button"><i class="fa-solid fa-equals"></i></button>
+        <button onclick="addToDisplay('+')" class="calculator-button"><i class="fa-solid fa-plus"></i></button>
+        <button onclick="clearDisplay()" class="calculator-button"><i class="fa-solid fa-c"></i></button>
     </div>
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> - Desenvolvido por <a href="https://gabiqss.github.io/portfolio/" target="_blank">Gabriela Queiroz</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
